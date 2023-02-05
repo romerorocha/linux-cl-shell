@@ -1,6 +1,6 @@
 # Usando comandos de estrutura
 
-Existem comandos que permitem que o shell evite seções do script com base em condições e no fluxo de operações. Esses são chamados de *comandos estruturados*.
+Existem comandos que permitem que o shell evite seções do script com base em condições e no fluxo de operações. Esses são chamados de _comandos estruturados_.
 
 ## Statement if-then
 
@@ -15,7 +15,7 @@ if command; then
 fi
 ```
 
-Em outras linguagens de programação, o objeto depois de um if é uma expressão que é avaliada para *true* ou *false*. O `if` do Bash não funciona assim.
+Em outras linguagens de programação, o objeto depois de um if é uma expressão que é avaliada para _true_ ou _false_. O `if` do Bash não funciona assim.
 
 O `if` do Bash executa o comando definido na primeira linha. Se o status de saída do comando é zero, o bloco de comandos dentro do `then` é executado. Se for qualquer outro código, o shell move o fluxo para o próximo comando do script.
 
@@ -44,7 +44,7 @@ fi
 
 ### O comando "test"
 
-Existe um utilitário do Bash que ajuda a avaliar coisas além de status de saída de comandos: o comando *test*. Qualquer condição que ele receber e avaliar como *true*, ele retornará um *exit status* zero.
+Existe um utilitário do Bash que ajuda a avaliar coisas além de status de saída de comandos: o comando _test_. Qualquer condição que ele receber e avaliar como _true_, ele retornará um _exit status_ zero.
 
 ```sh
 if test condition
@@ -72,7 +72,7 @@ As comparações com strings usam os operadores `= != < > -n -z` e podem ser cap
 
 `-n` verifica se tem length maior que zero.
 `-z` se tem length zero.
-`>` e `<` dependem de um caractere de *escape*, para não conflitar com os símbolos de redirecionamento de entrada ou saída.
+`>` e `<` dependem de um caractere de _escape_, para não conflitar com os símbolos de redirecionamento de entrada ou saída.
 
 ### Comparações de arquivos
 

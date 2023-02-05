@@ -18,13 +18,13 @@ Pode-se também utilizar o formato `${variável}`.
 
 Além das variáveis de ambiente, também é possível utilizar variáveis próprias, que consiste em qualquer string de texto de até 20 caracteres do tipo letra, dígito ou underscore.
 
-Variáveis de usuário são *case sensitive*, então `Var1` é diferente de `var1`.
+Variáveis de usuário são _case sensitive_, então `Var1` é diferente de `var1`.
 
 Para obter-se o valor da variável local, usa-se `$`. Para lhe atribuir um valor, não.
 
 ## Substituição de Comandos
 
-Uma das *features* mais úteis de shell script é a habilidade de extrair informações da saída de um comando e atribuí-la a uma variável. Existem duas formas de fazer isso:
+Uma das _features_ mais úteis de shell script é a habilidade de extrair informações da saída de um comando e atribuí-la a uma variável. Existem duas formas de fazer isso:
 
 - O caractere crase
 - O formato `$()`
@@ -36,7 +36,7 @@ Sub shells também podem acabar sendo criados dependendo da forma como se chama 
 ## Redirecionando a saída
 
 - `comando > output_file` é a forma mais básica. Se o arquivo já existir, seu conteúdo é sobrescrito. Se não, é criado um arquivo e o conteúdo preenchido.
-- `comando >> output_file` faz um *append*, não sobrescreve o conteúdo existente.
+- `comando >> output_file` faz um _append_, não sobrescreve o conteúdo existente.
 
 ## Redirecionando a entrada
 
@@ -65,11 +65,11 @@ A segunda forma é utilizando colchetes: `$[ operação ]`. Exemplo: `var1=$[1 +
 
 Uma grande limitação de operações matemáticas em shell scripting no Bash é que elas só suportam aritmética de inteiros. Já o **z shell (zsh)** provê aritmética de ponto flutuante.
 
-No Bash, para contornar isso, existe o programa **bc**, uma calculadora embutida no bash, que suporta números, variáveis, comentários, expressões, *statements* tipo *if-then* e funções.
+No Bash, para contornar isso, existe o programa **bc**, uma calculadora embutida no bash, que suporta números, variáveis, comentários, expressões, _statements_ tipo _if-then_ e funções.
 
 ## Saindo do script
 
-Quando o script executa o último comando, ele termina. Porém, existe uma forma mais elegante de terminar um script: um *exit status*. É um inteiro que indica ao shell que o processamento terminou, podendo assumir valores entre 0 e 255.
+Quando o script executa o último comando, ele termina. Porém, existe uma forma mais elegante de terminar um script: um _exit status_. É um inteiro que indica ao shell que o processamento terminou, podendo assumir valores entre 0 e 255.
 
 O Linux provê uma variável especial `$?` que guarda o status de saída do último comando executado. Por convenção, se o comando completou com sucesso, o valor é 0.
 
@@ -83,6 +83,6 @@ Alguns códigos geralmente utilizados (mas não são convenção):
 - 128: argumento de saída inválido
 - 128+x: erro fatal com o sinal Linux x
 - 130: comando terminou com ctrl + c
-- 255: status de saída *out of range*
+- 255: status de saída _out of range_
 
-Por padrão, um script shell irá terminar com o *exit status* do seu último comando. Mas, o comando `exit` permite mudar o status no script.
+Por padrão, um script shell irá terminar com o _exit status_ do seu último comando. Mas, o comando `exit` permite mudar o status no script.
