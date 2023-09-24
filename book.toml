@@ -1,6 +1,0 @@
-[book]
-authors = ["Claudio Romero"]
-language = "en"
-multilingual = false
-src = "notas"
-title = "Linux Command Line and Shell Scripting"
