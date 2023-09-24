@@ -1,3 +1,3 @@
 # Linux Command Line and Shell Scripting
 
-Exercícios do livro.
+Solutions to the exercises in the book.
